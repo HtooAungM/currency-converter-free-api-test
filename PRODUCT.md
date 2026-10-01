@@ -4,7 +4,8 @@
 
 **Product name:** Currency Changer  
 **Platform:** Web / mobile (Expo React Native)  
-**App URL:** _(Vercel production URL — to be added after deploy)_  
+**App URL:** https://currency-converter-rho-seven.vercel.app/  
+**Repository:** https://github.com/HtooAungM/currency-converter-free-api-test  
 **Purpose:** Convert an amount from one currency to another using live mid-market exchange rates from the free Frankfurter API. No login is required.
 
 **Primary users:** Anyone who needs a quick currency conversion, especially USD ↔ Myanmar Kyat (MMK) and other common currencies.
@@ -51,7 +52,7 @@ Convert an amount and verify the result, then swap currencies and verify the upd
 
 ### Steps
 
-1. Open the Exchange screen.
+1. Open https://currency-converter-rho-seven.vercel.app/
 2. Confirm default pair is **USD → MMK** and amount is **10**.
 3. Wait until the converted result and rate line are visible (loading finished).
 4. Clear the amount field and enter **25**.
@@ -142,7 +143,7 @@ Convert 25 USD to EUR, verify receive amount and rate, then swap and verify EUR 
 It performs the core product action (conversion), changes input, changes currency, verifies outcomes, and includes swap. It is not a login-only or page-load-only test.
 
 ### Suggested automated checks
-1. Open app URL
+1. Open https://currency-converter-rho-seven.vercel.app/
 2. Assert `from-currency-code` text is `USD`
 3. Assert `to-currency-code` text is `MMK`
 4. Wait until `rate-line` is visible and contains `1 USD`
